@@ -6,7 +6,7 @@ def readSymbol(name) -> None:
     conn = http.client.HTTPSConnection("apidojo-yahoo-finance-v1.p.rapidapi.com")
 
     headers = {
-    'x-rapidapi-key': "73dd1d525emsh0fa435d77ef7e14p1f10fbjsnb7ce8511e2eb",
+    'x-rapidapi-key': "ENTER YOUR KEY HERE",
     'x-rapidapi-host': "apidojo-yahoo-finance-v1.p.rapidapi.com"
     }
 
