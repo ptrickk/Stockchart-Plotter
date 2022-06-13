@@ -4,11 +4,11 @@ This small script calls an API to get live data of current stocks and visualizes
 
 ## Executing
 
-To run this, just execute stockPlot.py and enter the ticker symbol of a stock you want see. The API will request the data and the script will then generate the plot.
+To run this, just execute stockMain.py and enter the ticker symbol of a stock you want see. The API will request the data and the script will then generate the plot.
 
 Example:
 ````
-python .\stockPlot.py 
+python .\stockMain.py 
 Enter Symbol: AAPL
 ````
 ## API

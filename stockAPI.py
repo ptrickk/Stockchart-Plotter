@@ -2,7 +2,7 @@ import http.client
 import json
 from datetime import datetime
 
-def readSymbol(name):
+def readSymbol(name) -> None:
     conn = http.client.HTTPSConnection("apidojo-yahoo-finance-v1.p.rapidapi.com")
 
     headers = {
@@ -14,7 +14,7 @@ def readSymbol(name):
 
     conn.request("GET", query, headers=headers)
 
-def read(sign, interval, range):
+def read(sign, interval, range) -> None:
     conn = http.client.HTTPSConnection("apidojo-yahoo-finance-v1.p.rapidapi.com")
 
     headers = {
@@ -33,7 +33,7 @@ def read(sign, interval, range):
     return data.decode("utf-8")
 
 
-def getValue(obj):
+def getValue(obj) -> None:
     jObj = json.loads(obj)
     
     a_info = list()
@@ -55,7 +55,7 @@ def getValue(obj):
 
     return [a_time, a_value, a_info]
 
-def printValue(obj):
+def printValue(obj) -> None:
     
     print('Name of Stock: ' + obj[2][0])
     print('Currency of Stock: ' + obj[2][1])
