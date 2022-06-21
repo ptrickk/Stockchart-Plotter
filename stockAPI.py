@@ -2,6 +2,7 @@ import http.client
 import json
 from datetime import datetime
 
+#TODO transform into class!
 f = open("key.txt", "r")
 key = f.read()
 
